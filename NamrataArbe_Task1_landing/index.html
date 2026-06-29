@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnHub — Learn Anytime, Anywhere</title>
+  <meta name="description" content="LearnHub is an online learning platform to master technology, programming, design, and business skills from expert instructors." />
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="logo">
+        <span class="logo__mark"><i class="fa-solid fa-graduation-cap"></i></span>
+        Learn<span class="logo__accent">Hub</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active-link">Home</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#pricing" class="btn btn--primary btn--small nav-cta">Enroll Now</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Trusted by 10,000+ learners</span>
+        <h1 class="hero__title">Learn Anytime,<br><span class="text-gradient">Anywhere</span></h1>
+        <p class="hero__desc">
+          Build real skills in programming, design, data, and business with bite-sized
+          lessons, live mentorship, and projects reviewed by industry experts — all at your own pace.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary btn--large">
+            <i class="fa-solid fa-rocket"></i> Start Learning
+          </a>
+          <a href="#courses" class="btn btn--ghost btn--large">
+            Explore Courses <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="trust-avatars">
+            <span class="avatar-dot" style="--c:#6366f1">JD</span>
+            <span class="avatar-dot" style="--c:#7c3aed">AS</span>
+            <span class="avatar-dot" style="--c:#2563eb">MK</span>
+          </div>
+          <p><strong>4.9/5</strong> average rating from 8,400+ reviews</p>
+        </div>
+      </div>
+
+      <!-- Signature element: live "code editor" mock window -->
+      <div class="hero__visual reveal">
+        <div class="code-window">
+          <div class="code-window__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="code-window__title">learning-path.js</span>
+          </div>
+          <div class="code-window__body">
+            <pre><code id="typedCode"></code><span class="cursor-blink">|</span></pre>
+          </div>
+        </div>
+
+        <div class="float-card float-card--1">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <strong>Certificate</strong>
+            <p>Earned today</p>
+          </div>
+        </div>
+
+        <div class="float-card float-card--2">
+          <i class="fa-solid fa-chart-line"></i>
+          <div>
+            <strong>+32%</strong>
+            <p>Skill growth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__visual reveal">
+        <div class="about__card about__card--main">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>120+ hands-on projects</h3>
+          <p>Learn by building things you can actually show off.</p>
+        </div>
+        <div class="about__card about__card--badge">
+          <i class="fa-solid fa-users"></i>
+          <strong>100+</strong>
+          <span>Expert mentors</span>
+        </div>
+      </div>
+
+      <div class="about__content reveal">
+        <span class="eyebrow eyebrow--dark">About LearnHub</span>
+        <h2 class="section-title">A learning platform built for people who actually finish courses</h2>
+        <p class="section-text">
+          LearnHub was founded to close the gap between watching tutorials and landing a job.
+          We pair structured, project-based curricula with live mentorship so skills stick —
+          not just get watched.
+        </p>
+
+        <div class="about__pillars">
+          <div class="pillar">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <h4>Our Mission</h4>
+              <p>Make high-quality, practical tech and business education accessible to anyone, anywhere.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-eye"></i>
+            <div>
+              <h4>Our Vision</h4>
+              <p>A world where your next career move is one course away, regardless of where you start.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POPULAR COURSES ========== -->
+  <section class="courses" id="courses">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark">Popular Courses</span>
+        <h2 class="section-title">Pick a path, start building today</h2>
+        <p class="section-text">Six career tracks. Every course is project-based and mentor-reviewed.</p>
+      </div>
+
+      <div class="course-grid">
+
+        <article class="course-card reveal">
+          <div class="course-card__icon icon--blue"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript and modern frameworks to build full production websites.</p>
+          <div class="course-card__meta"><span><i class="fa-solid fa-layer-group"></i> 48 lessons</span><span><i class="fa-solid fa-clock"></i> 10 weeks</span></div>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="course-card reveal">
+          <div class="course-card__icon icon--purple"><i class="fa-brands fa-python"></i></div>
+          <h3>Python Programming</h3>
+          <p>From syntax basics to automation and backend development with Python.</p>
+          <div class="course-card__meta"><span><i class="fa-solid fa-layer-group"></i> 36 lessons</span><span><i class="fa-solid fa-clock"></i> 8 weeks</span></div>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="course-card reveal">
+          <div class="course-card__icon icon--blue"><i class="fa-solid fa-chart-simple"></i></div>
+          <h3>Data Science</h3>
+          <p>Statistics, visualization, and machine learning fundamentals using real datasets.</p>
+          <div class="course-card__meta"><span><i class="fa-solid fa-layer-group"></i> 52 lessons</span><span><i class="fa-solid fa-clock"></i> 12 weeks</span></div>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="course-card reveal">
+          <div class="course-card__icon icon--purple"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Design systems, prototyping, and user research to craft delightful products.</p>
+          <div class="course-card__meta"><span><i class="fa-solid fa-layer-group"></i> 40 lessons</span><span><i class="fa-solid fa-clock"></i> 9 weeks</span></div>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="course-card reveal">
+          <div class="course-card__icon icon--blue"><i class="fa-solid fa-brain"></i></div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p>Neural networks, model training, and deploying intelligent applications.</p>
+          <div class="course-card__meta"><span><i class="fa-solid fa-layer-group"></i> 60 lessons</span><span><i class="fa-solid fa-clock"></i> 14 weeks</span></div>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="course-card reveal">
+          <div class="course-card__icon icon--purple"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>Digital Marketing</h3>
+          <p>SEO, paid ads, content strategy, and analytics to grow any brand online.</p>
+          <div class="course-card__meta"><span><i class="fa-solid fa-layer-group"></i> 34 lessons</span><span><i class="fa-solid fa-clock"></i> 7 weeks</span></div>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE LEARNHUB ========== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark">Why Choose LearnHub?</span>
+        <h2 class="section-title">Everything you need to keep learning, and keep going</h2>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <h3>Expert Instructors</h3>
+          <p>Learn from industry professionals with real-world, hands-on experience.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-infinity"></i>
+          <h3>Lifetime Access</h3>
+          <p>Enroll once and revisit every lesson and update, for as long as you like.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Flexible Learning</h3>
+          <p>Study at your own pace, on any device, around your own schedule.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-award"></i>
+          <h3>Certificates</h3>
+          <p>Earn shareable certificates recognized by hiring partners.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-video"></i>
+          <h3>Live Classes</h3>
+          <p>Join weekly live sessions to ask questions and get real-time feedback.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>Community Support</h3>
+          <p>Get unstuck fast with an active peer and mentor community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATISTICS SECTION ========== -->
+  <section class="stats" id="stats">
+    <div class="container stats__grid">
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="10000">0</span>+</h3>
+        <p>Students</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="250">0</span>+</h3>
+        <p>Courses</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="100">0</span>+</h3>
+        <p>Instructors</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="98">0</span>%</h3>
+        <p>Satisfaction Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark">Student Testimonials</span>
+        <h2 class="section-title">Don't just take our word for it</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"LearnHub's Web Development track took me from zero to building full projects in under three months. The mentor feedback made all the difference."</p>
+          <div class="testimonial-person">
+            <span class="avatar-dot" style="--c:#2563eb">PR</span>
+            <div>
+              <strong>Priya Rao</strong>
+              <span>Web Development</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"The Data Science course is incredibly practical. I worked with real datasets every week and walked away with a portfolio, not just a certificate."</p>
+          <div class="testimonial-person">
+            <span class="avatar-dot" style="--c:#7c3aed">AM</span>
+            <div>
+              <strong>Arjun Mehta</strong>
+              <span>Data Science</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"I switched careers into UI/UX design after this course. The live classes and community support kept me accountable the whole way through."</p>
+          <div class="testimonial-person">
+            <span class="avatar-dot" style="--c:#6366f1">SK</span>
+            <div>
+              <strong>Sara Khan</strong>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING PLANS ========== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark">Pricing Plans</span>
+        <h2 class="section-title">Simple pricing, no surprises</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <h3>Free</h3>
+          <p class="price-card__desc">Get a feel for LearnHub with limited access.</p>
+          <div class="price-card__amount">$0<span>/forever</span></div>
+          <ul class="price-card__list">
+            <li><i class="fa-solid fa-check"></i> 3 starter courses</li>
+            <li><i class="fa-solid fa-check"></i> Community access</li>
+            <li><i class="fa-solid fa-check"></i> Basic support</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+
+        <div class="price-card price-card--popular reveal">
+          <span class="popular-badge">Most Popular</span>
+          <h3>Pro</h3>
+          <p class="price-card__desc">Everything you need to build real career skills.</p>
+          <div class="price-card__amount">$19<span>/month</span></div>
+          <ul class="price-card__list">
+            <li><i class="fa-solid fa-check"></i> All 250+ courses</li>
+            <li><i class="fa-solid fa-check"></i> Certificates included</li>
+            <li><i class="fa-solid fa-check"></i> Live classes access</li>
+            <li><i class="fa-solid fa-check"></i> Priority support</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Get Started</a>
+        </div>
+
+        <div class="price-card reveal">
+          <h3>Premium</h3>
+          <p class="price-card__desc">For teams and serious career switchers.</p>
+          <div class="price-card__amount">$39<span>/month</span></div>
+          <ul class="price-card__list">
+            <li><i class="fa-solid fa-check"></i> Everything in Pro</li>
+            <li><i class="fa-solid fa-check"></i> 1:1 mentorship</li>
+            <li><i class="fa-solid fa-check"></i> Resume &amp; interview prep</li>
+            <li><i class="fa-solid fa-check"></i> Lifetime access</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALL TO ACTION ========== -->
+  <section class="cta">
+    <div class="container cta__inner reveal">
+      <h2>Your next skill is one click away</h2>
+      <p>Join thousands of learners building real careers with LearnHub. Start today, learn at your pace.</p>
+      <a href="#pricing" class="btn btn--white btn--large">Join Now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <span class="eyebrow eyebrow--dark">Contact Us</span>
+        <h2 class="section-title">Have a question? Let's talk.</h2>
+        <p class="section-text">Our team typically replies within one business day.</p>
+
+        <div class="contact__item"><i class="fa-solid fa-envelope"></i> hello@learnhub.com</div>
+        <div class="contact__item"><i class="fa-solid fa-phone"></i> +1 (555) 012-3456</div>
+        <div class="contact__item"><i class="fa-solid fa-location-dot"></i> 221 Skyline Ave, San Francisco, CA</div>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" />
+          <span class="error-msg" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          <span class="error-msg" id="subjectError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--large btn--full">Send Message</button>
+        <p class="form-success" id="formSuccess">Thanks! Your message has been sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--footer">
+          <span class="logo__mark"><i class="fa-solid fa-graduation-cap"></i></span>
+          Learn<span class="logo__accent">Hub</span>
+        </a>
+        <p>Practical, project-based courses in tech, design, and business — taught by people who do the work.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-envelope"></i> hello@learnhub.com</p>
+        <p><i class="fa-solid fa-phone"></i> +1 (555) 012-3456</p>
+        <p><i class="fa-solid fa-location-dot"></i> San Francisco, CA</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> LearnHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== SCROLL TO TOP BUTTON ========== -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

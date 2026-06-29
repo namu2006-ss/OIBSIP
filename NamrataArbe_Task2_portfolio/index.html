@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namrata Arbe | Computer Engineering Student &amp; Web Developer</title>
+  <meta name="description" content="Portfolio of Namrata Arbe — B.Tech Computer Engineering student, web developer and IoT enthusiast. Explore projects, skills, education and certifications." />
+  <meta name="keywords" content="Namrata Arbe, Web Developer, IoT, Computer Engineering, Portfolio, MIT Academy of Engineering" />
+  <meta name="author" content="Namrata Arbe" />
+  <meta name="theme-color" content="#0B1730" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Namrata Arbe | Portfolio" />
+  <meta property="og:description" content="B.Tech Computer Engineering student, Web Developer &amp; IoT Enthusiast." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#home">Skip to main content</a>
+
+  <!-- ===== Sticky Navigation ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>Namrata<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-eyebrow"><i class="fa-solid fa-terminal"></i> Welcome to my portfolio</p>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Namrata Arbe</span></h1>
+          <h2 class="hero-typing">
+            <span id="typingText"></span><span class="cursor" aria-hidden="true">|</span>
+          </h2>
+          <p class="hero-intro">
+            Passionate about building responsive and user-friendly web applications while exploring
+            IoT-based solutions. I enjoy solving real-world problems through technology and continuously
+            improving my software development skills.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="https://drive.google.com/file/d/1xqIzOHj-A_IjKHc4v0vk4MmM_s-Nkdg2/view?usp=drivesdk" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span><i class="fa-solid fa-graduation-cap"></i> MIT Academy of Engineering</span>
+            <span><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <img src="assets/images/hero-illustration.svg" alt="Illustration of a laptop with code and floating IoT and development icons" class="hero-illustration" loading="eager" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="section" id="about" aria-label="About me">
+      <div class="container">
+        <p class="section-eyebrow reveal">Get to know me</p>
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="divider reveal" aria-hidden="true"></div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <p>
+              I am <strong>Namrata Arbe</strong>, currently pursuing <strong>B.Tech in Computer Engineering</strong>
+              at <strong>MIT Academy of Engineering, Alandi, Pune</strong>. I have successfully completed my
+              <strong>Diploma in Information Technology</strong> from <strong>Government Polytechnic, Amravati</strong>.
+            </p>
+            <p>
+              I am passionate about <strong>Web Development</strong>, <strong>Software Development</strong>, and
+              <strong>IoT</strong>. I enjoy building innovative projects that solve real-world problems while
+              continuously improving my programming, problem-solving, and technical skills.
+            </p>
+            <p>
+              My goal is to become a skilled software engineer and contribute to impactful technology solutions.
+            </p>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card glass">
+              <i class="fa-solid fa-code"></i>
+              <h3>3+</h3>
+              <p>Projects Built</p>
+            </div>
+            <div class="stat-card glass">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>5+</h3>
+              <p>Languages Used</p>
+            </div>
+            <div class="stat-card glass">
+              <i class="fa-solid fa-school"></i>
+              <h3>B.Tech</h3>
+              <p>Computer Engineering</p>
+            </div>
+            <div class="stat-card glass">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>IoT</h3>
+              <p>Enthusiast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section class="section section-alt" id="skills" aria-label="Skills">
+      <div class="container">
+        <p class="section-eyebrow reveal">What I work with</p>
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="divider reveal" aria-hidden="true"></div>
+
+        <div class="skills-group reveal">
+          <h3 class="skills-group-title"><i class="fa-solid fa-code"></i> Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass">
+              <span class="skill-icon skill-icon-text">C</span>
+              <p>C</p>
+            </div>
+            <div class="skill-card glass">
+              <span class="skill-icon skill-icon-text">C++</span>
+              <p>C++</p>
+            </div>
+            <div class="skill-card glass">
+              <i class="fa-brands fa-java skill-icon"></i>
+              <p>Java</p>
+            </div>
+            <div class="skill-card glass">
+              <i class="fa-brands fa-python skill-icon"></i>
+              <p>Python</p>
+            </div>
+            <div class="skill-card glass">
+              <i class="fa-brands fa-square-js skill-icon"></i>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <h3 class="skills-group-title"><i class="fa-solid fa-globe"></i> Web Development</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass">
+              <i class="fa-brands fa-html5 skill-icon"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skill-card glass">
+              <i class="fa-brands fa-css3-alt skill-icon"></i>
+              <p>CSS</p>
+            </div>
+            <div class="skill-card glass">
+              <i class="fa-brands fa-square-js skill-icon"></i>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <h3 class="skills-group-title"><i class="fa-solid fa-database"></i> Database</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <p>SQL</p>
+            </div>
+            <div class="skill-card glass">
+              <i class="fa-solid fa-server skill-icon"></i>
+              <p>DBMS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <h3 class="skills-group-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass">
+              <i class="fa-solid fa-code skill-icon"></i>
+              <p>VS Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education Section ===== -->
+    <section class="section" id="education" aria-label="Education">
+      <div class="container">
+        <p class="section-eyebrow reveal">My academic journey</p>
+        <h2 class="section-title reveal">Education</h2>
+        <div class="divider reveal" aria-hidden="true"></div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content glass">
+              <span class="status-badge status-progress">Currently Pursuing</span>
+              <h3>B.Tech in Computer Engineering</h3>
+              <p class="timeline-org">MIT Academy of Engineering, Alandi, Pune</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+            <div class="timeline-content glass">
+              <span class="status-badge status-done">Completed</span>
+              <h3>Diploma in Information Technology</h3>
+              <p class="timeline-org">Government Polytechnic, Amravati</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section class="section section-alt" id="projects" aria-label="Projects">
+      <div class="container">
+        <p class="section-eyebrow reveal">Things I've built</p>
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="divider reveal" aria-hidden="true"></div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Smart Helmet -->
+          <article class="project-card glass reveal">
+            <div class="project-img">
+              <img src="assets/images/smart-helmet-photo-1.jpg" alt="Smart Helmet IoT circuit board with sensors mounted on a wheel chassis" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Smart Helmet using IoT</h3>
+              <div class="tech-tags">
+                <span>Arduino UNO</span><span>IoT</span><span>IR Sensor</span>
+                <span>Alcohol Sensor</span><span>Vibration Sensor</span><span>Embedded Systems</span>
+              </div>
+              <p>
+                Developed an IoT-based Smart Helmet to improve rider safety by ensuring helmet usage,
+                detecting accidents, and enhancing road safety through smart sensor integration.
+              </p>
+              <button class="btn btn-primary btn-sm" data-modal-target="modal-helmet">
+                <i class="fa-solid fa-eye"></i> View Project
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Pollution Complaint System -->
+          <article class="project-card glass reveal">
+            <div class="project-img">
+              <img src="assets/images/pollution-system.svg" alt="Pollution complaint and management dashboard illustration" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Pollution Complaint and Management System</h3>
+              <div class="tech-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <p>
+                Developed a responsive web application that allows users to register pollution-related
+                complaints while enabling authorities to manage, track, and resolve complaints efficiently.
+              </p>
+              <a href="https://clean-env-report.lovable.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+              </a>
+          <article class="project-card glass reveal">
+            <div class="project-img">
+              <img src="assets/images/interview-tool.svg" alt="Smart interview preparation tool chat interface illustration" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Smart Interview Preparation Tool</h3>
+              <div class="tech-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <p>
+                Developed a web-based interview preparation platform that helps students practice technical
+                and HR interview questions through an easy-to-use interface, improving confidence and
+                interview readiness.
+              </p>
+              <a href="https://qvision.vercel.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Certifications Section ===== -->
+    <section class="section" id="certifications" aria-label="Certifications">
+      <div class="container">
+        <p class="section-eyebrow reveal">Recognitions &amp; learning</p>
+        <h2 class="section-title reveal">Certifications</h2>
+        <div class="divider reveal" aria-hidden="true"></div>
+
+        <div class="cert-grid">
+          <div class="cert-card glass reveal">
+            <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Data Analytics Essentials</h3>
+            <p class="cert-org">Cisco Networking Academy &middot; MIT Academy of Engineering</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> 10 Jun 2026</p>
+            <a href="assets/certificates/cert-data-analytics-essentials.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="cert-card glass reveal">
+            <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>Introduction to Modern AI</h3>
+            <p class="cert-org">Cisco Networking Academy &middot; MIT Academy of Engineering</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> 09 Jun 2026</p>
+            <a href="assets/certificates/cert-intro-modern-ai.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="cert-card glass reveal">
+            <div class="cert-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Microsoft Power BI Data Analyst (PL-300)</h3>
+            <p class="cert-org">Microsoft Elevate &amp; Philanthropies &middot; FICE</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> 16 Mar 2026</p>
+            <a href="assets/certificates/cert-powerbi-pl300.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="cert-card glass reveal">
+            <div class="cert-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Claude 101</h3>
+            <p class="cert-org">Anthropic</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Certificate of Completion</p>
+            <a href="assets/certificates/cert-claude-101.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="cert-card glass reveal">
+            <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Internship &mdash; IoT &amp; Embedded Systems</h3>
+            <p class="cert-org">MDB Electrosoft Pvt. Ltd.</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> 6 Weeks &middot; Completed 15 Jul 2024</p>
+            <a href="assets/certificates/cert-mdb-electrosoft-internship.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="cert-card glass reveal cert-card-add">
+            <div class="cert-icon"><i class="fa-solid fa-plus"></i></div>
+            <h3>Add New Certificate</h3>
+            <p class="cert-org">Drop your file in<br /><code>assets/certificates/</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="section section-alt" id="contact" aria-label="Contact">
+      <div class="container">
+        <p class="section-eyebrow reveal">Let's connect</p>
+        <h2 class="section-title reveal">Contact Me</h2>
+        <div class="divider reveal" aria-hidden="true"></div>
+
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <a href="mailto:namrata.arbe@example.com" class="contact-card glass">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>namrata.arbe@example.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/namrata-arbe" target="_blank" rel="noopener noreferrer" class="contact-card glass">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/namrata-arbe</p>
+              </div>
+            </a>
+          </div>
+
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+                <span class="error-message" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+                <span class="error-message" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" />
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Namrata Arbe. All Rights Reserved.</p>
+      <p class="footer-credit">Designed &amp; Developed by Namrata Arbe</p>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/namrata-arbe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:namrata.arbe@example.com" aria-label="Send an email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== Smart Helmet Project Modal ===== -->
+  <div class="modal-overlay" id="modal-helmet" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalHelmetTitle">
+      <button class="modal-close" data-modal-close aria-label="Close project details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h2 id="modalHelmetTitle">Smart Helmet using IoT</h2>
+
+      <div class="modal-gallery">
+        <img src="assets/images/smart-helmet-photo-1.jpg" alt="Smart helmet circuit board with motor, wheel and sensor wiring" loading="lazy" />
+        <img src="assets/images/smart-helmet-photo-2.jpg" alt="Smart helmet assembly showing internal wiring, NodeMCU board and sensors fitted inside the helmet shell" loading="lazy" />
+      </div>
+
+      <div class="modal-content">
+        <h3><i class="fa-solid fa-lightbulb"></i> Project Overview</h3>
+        <p>
+          The Smart Helmet is an IoT-based safety device designed to reduce two-wheeler accidents
+          caused by not wearing a helmet, drunk driving, and delayed accident response. The system
+          combines embedded sensors with microcontroller logic to make riding safer for everyone.
+        </p>
+
+        <h3><i class="fa-solid fa-bullseye"></i> Objectives</h3>
+        <ul>
+          <li>Ensure the vehicle starts only when the helmet is worn correctly.</li>
+          <li>Detect alcohol consumption and prevent the rider from starting the vehicle.</li>
+          <li>Identify accidents through vibration/impact detection and trigger alerts.</li>
+          <li>Improve overall road safety using affordable, easy-to-deploy hardware.</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-star"></i> Key Features</h3>
+        <ul>
+          <li>IR sensor to confirm whether the helmet is being worn.</li>
+          <li>Alcohol sensor to detect intoxication before vehicle ignition.</li>
+          <li>Vibration sensor to detect sudden impacts indicating an accident.</li>
+          <li>Microcontroller-based decision logic with instant alerts.</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-microchip"></i> Technologies Used</h3>
+        <div class="tech-tags">
+          <span>Arduino UNO</span><span>IoT</span><span>IR Sensor</span>
+          <span>Alcohol Sensor</span><span>Vibration Sensor</span><span>Embedded Systems</span>
+        </div>
+
+        <h3><i class="fa-solid fa-gears"></i> Working Process</h3>
+        <p>
+          The IR sensor first checks if the helmet is correctly worn. Once confirmed, the alcohol
+          sensor verifies the rider's sobriety. If both checks pass, the vehicle's ignition circuit
+          is enabled through the Arduino UNO. During the ride, the vibration sensor continuously
+          monitors for sudden jolts; an abnormal vibration pattern is treated as a possible accident
+          and triggers an alert.
+        </p>
+
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> Challenges Faced</h3>
+        <p>
+          Calibrating the sensors to avoid false positives (such as normal road vibrations being
+          mistaken for accidents) and ensuring reliable helmet-detection circuitry under real-world
+          conditions were the main challenges tackled during development.
+        </p>
+
+        <h3><i class="fa-solid fa-rocket"></i> Future Scope</h3>
+        <p>
+          The project can be extended with GPS-GSM modules for real-time location sharing during
+          accidents, mobile app integration for emergency contact alerts, and machine-learning-based
+          anomaly detection for more accurate accident identification.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
