@@ -75,9 +75,9 @@ This repository is deployed using **GitHub Pages**:
 2. Under **Source**, select branch **main**, folder **/ (root)**
 3. Save — each task becomes accessible at:
    ```
-   https://your-username.github.io/OIBSIP/NamrataArbe_Task1_landing/
-   https://your-username.github.io/OIBSIP/NamrataArbe_Task2_portfolio/
-   https://your-username.github.io/OIBSIP/NamrataArbe_Task3_temperature/
+   https://namu2006-ss.github.io/OIBSIP/NamrataArbe_Task1_landing/
+   https://namu2006-ss.github.io/OIBSIP/NamrataArbe_Task2_portfolio/
+   https://namu2006-ss.github.io/OIBSIP/NamrataArbe_Task3_temperature/
    ```
 
 ---
