@@ -18,9 +18,9 @@ Web Development Intern @ Oasis Infobyte
 
 | Task | Project | Description | Folder | Live Demo |
 |------|---------|--------------|--------|------------|
-| Task 1 | **Landing Page** | A modern, responsive landing page built with HTML, CSS & JavaScript. | [`NamrataArbe_Task1_landing`](./NamrataArbe_Task1_landing) | [View Live](https://your-username.github.io/OIBSIP/NamrataArbe_Task1_landing/) |
-| Task 2 | **Portfolio Website** | A personal portfolio website showcasing skills, projects, and contact information. | [`NamrataArbe_Task2_portfolio`](./NamrataArbe_Task2_portfolio) | [View Live](https://your-username.github.io/OIBSIP/NamrataArbe_Task2_portfolio/) |
-| Task 3 | **Temperature Converter** | A glassmorphism-styled temperature converter (Celsius, Fahrenheit, Kelvin) with input validation and smooth animations. | [`NamrataArbe_Task3_temperature`](./NamrataArbe_Task3_temperature) | [View Live](https://your-username.github.io/OIBSIP/NamrataArbe_Task3_temperature/) |
+| Task 1 | **Landing Page** | A modern, responsive landing page built with HTML, CSS & JavaScript. | [`NamrataArbe_Task1_landing`](./NamrataArbe_Task1_landing) | [View Live](https://namu2006-ss.github.io/OIBSIP/NamrataArbe_Task1_landing/) |
+| Task 2 | **Portfolio Website** | A personal portfolio website showcasing skills, projects, and contact information. | [`NamrataArbe_Task2_portfolio`](./NamrataArbe_Task2_portfolio) | [View Live](https://namu2006-ss.github.io/OIBSIP/NamrataArbe_Task2_portfolio/) |
+| Task 3 | **Temperature Converter** | A glassmorphism-styled temperature converter (Celsius, Fahrenheit, Kelvin) with input validation and smooth animations. | [`NamrataArbe_Task3_temperature`](./NamrataArbe_Task3_temperature) | [View Live](https://namu2006-ss.github.io/OIBSIP/NamrataArbe_Task3_temperature/) |
 
 > ⚠️ Replace `your-username` in the live demo links above with your actual GitHub username once GitHub Pages is enabled.
 
